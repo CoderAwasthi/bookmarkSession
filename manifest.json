@@ -1,0 +1,28 @@
+{
+    "name": "SaveSessions",
+    "version": "1.0",
+    "description": "Save the web url related with the content for re-open those",
+    "permissions": ["<all_urls>","activeTab","tabs","declarativeContent","storage","webNavigation","bookmarks"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/popupIcon.png",
+        "32": "icons/popupIcon.png",
+        "48": "icons/popupIcon.png",
+        "128": "icons/popupIcon.png"
+      }
+    },
+    "icons": {
+      "16": "icons/popupIcon.png",
+      "32": "icons/popupIcon.png",
+      "48": "icons/popupIcon.png",
+      "128": "icons/popupIcon.png"
+    },
+    "options_page": "options.html",
+    "manifest_version": 2,
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+  }
